@@ -9,6 +9,25 @@
     }
   });
   
+    $.ajax({
+    url: 'http://ekaterina-kaschenko.github.io/AJAX/index2.html',
+    success: function(data) {
+     $(document.body).append(data);
+    },
+    error: function(data) {
+      console.log(data);
+    }
+  });
+
+      $.ajax({
+    url: 'http://ekaterina-kaschenko.github.io/AJAX/index3.html',
+    success: function(data) {
+     $(document.body).append(data);
+    },
+    error: function(data) {
+      console.log(data);
+    }
+  });
   //   $.ajax({
   //   dataType: 'json',
   //   url: 'json/script2.json',
