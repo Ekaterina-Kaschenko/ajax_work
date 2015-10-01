@@ -52,3 +52,5 @@
     thirdImg.style.float = "left";
     thirdImg.style.marginRight = "20px";
     thirdImg.setAttribute('src', 'img/js3.jpg');
+    
+    
