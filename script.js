@@ -2,7 +2,9 @@
   $.ajax({
     url: 'http://ekaterina-kaschenko.github.io/AJAX/index1.html',
     success: function(data) {
-     $(document.body).append(data);
+     $('#div1').append(data);
+     $('#div1').animate({left:500},1500);
+     console.log(data);
     },
     error: function(data) {
       console.log(data);
@@ -20,14 +22,14 @@
   });
 
       $.ajax({
-    url: 'http://ekaterina-kaschenko.github.io/AJAX/index3.html',
-    success: function(data) {
-     $(document.body).append(data);
-    },
-    error: function(data) {
-      console.log(data);
-    }
-  });
+      url: 'http://ekaterina-kaschenko.github.io/AJAX/index3.html',
+      success: function(data) {
+       $(document.body).append(data);
+      },
+      error: function(data) {
+        console.log(data);
+      }
+    });
   
     var firstImg = document.createElement('img');
     document.body.appendChild(firstImg);
